@@ -35,7 +35,7 @@
                     <td v-if="task.finished!=''" style="text-decoration:line-through;">{{task.started}}</td>
                     <td v-else>{{task.started}}</td>
                     <td @click="finish(task.id)" style="cursor:pointer">{{task.finished}}</td>
-                    <td @click="remove(task.id)" class="text-danger" style="cursor:pointer">Delete</td>
+                    <td @click="remove(task.id)" class="text-danger" style="cursor:pointer"><strong>Delete</strong></td>
                   </tr>
                 </tbody>
               </table>
